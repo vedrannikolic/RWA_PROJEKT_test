@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Integration_modul.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
